@@ -1,5 +1,6 @@
 package main.set.Pesquisa;
 
+
 public class Contato {
 
     private String nome;
@@ -14,9 +15,6 @@ public class Contato {
         return nome;
     }
 
-    public int getNumero() {
-        return numero;
-    }
 
     public void setNumero(int numero) {
         this.numero = numero;
@@ -24,9 +22,6 @@ public class Contato {
 
     @Override
     public String toString() {
-        return "Contato{" +
-                "nome='" + nome + '\'' +
-                ", numero=" + numero +
-                '}';
+        return nome + ", " + numero;
     }
 }
