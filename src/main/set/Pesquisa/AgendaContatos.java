@@ -81,7 +81,7 @@ public class AgendaContatos {
         System.out.println(agendaContatos.pesquisarPorNome("Maria"));
 
         // Atualizando o número de um contato
-        Contato contatoAtualizado = agendaContatos.atualizarNumeroContato("Carolina", 44443333);
+        Contato contatoAtualizado = agendaContatos.atualizarNumeroContato("Maria Fernandes", 44443333);
         System.out.println("Contato atualizado: " + contatoAtualizado);
 
         // Exibindo os contatos atualizados na agenda

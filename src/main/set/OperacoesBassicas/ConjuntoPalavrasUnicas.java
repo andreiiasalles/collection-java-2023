@@ -7,6 +7,8 @@ public class ConjuntoPalavrasUnicas {
 
     private Set<String> palavrasUnicaSet;
 
+
+
     public ConjuntoPalavrasUnicas() {
         this.palavrasUnicaSet = new HashSet<>();
     }
