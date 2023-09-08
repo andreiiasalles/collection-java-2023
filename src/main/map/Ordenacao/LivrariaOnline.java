@@ -25,13 +25,22 @@ public class LivrariaOnline {
         }
     }
 
-    public Map<String, Livro> exibirLivrosOrdenadosPorPreco() {
-        Map<String, Livro> livrosOrdenados = new TreeMap<>(livroMap);
+   //    public Map<String, Livro> exibirLivrosOrdenadosPorPreco() {
+//        Map<String, Livro> livrosOrdenados = new TreeMap<>(livroMap);
+//
+//        for (Livro livro : livrosOrdenados.values()) {
+//            System.out.println(livro);
+//        }
+//        return livrosOrdenados;
+//    }
 
-        for (Livro livro : livrosOrdenados.values()) {
-            System.out.println(livro);
-        }
-        return livrosOrdenados;
+    public void exibirLivrosOrdenadosPorPreco() {
+        List<Map.Entry<String, Livro>> listaOrdenada = new ArrayList<>(livroMap.entrySet());
+
+        // Usar um comparador para ordenar a lista por preço
+        listaOrdenada.sort(Comparator.comparingDouble(entry -> entry.getValue().getPreco()));
+
+        listaOrdenada.forEach(entry -> System.out.println(entry.getValue()));
     }
 
     public Map<String, Livro> pesquisarLivrosPorAutor(String autor) {
