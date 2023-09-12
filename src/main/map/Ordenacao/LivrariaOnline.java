@@ -112,20 +112,25 @@ public class LivrariaOnline {
         livrariaOnline.adicionarLivro("https://amzn.to/45u86q4", new Livro("Assassinato no Expresso do Oriente", "Agatha Christie", 5d));
 
         // Exibe todos os livros ordenados por preço
+        System.out.println();
         livrariaOnline.exibirLivrosOrdenadosPorPreco();
+        System.out.println();
 
-        // Pesquisa livros por autor
-        //String autorPesquisa = "Josh Malerman";
-        //livrariaOnline.pesquisarLivrosPorAutor(autorPesquisa);
+         //Pesquisa livros por autor
+        String autorPesquisa = "Josh Malerman";
+        System.out.println(livrariaOnline.pesquisarLivrosPorAutor(autorPesquisa));
+        System.out.println();
 
-        // Obtém e exibe o livro mais caro
-        //System.out.println("Livro mais caro: " + livrariaOnline.obterLivroMaisCaro());
+         //Obtém e exibe o livro mais caro
+        System.out.println("Livro mais caro: " + livrariaOnline.obterLivroMaisCaro());
+        System.out.println();
 
-        // Obtém e exibe o livro mais barato
-       // System.out.println("Livro mais barato: " + livrariaOnline.exibirLivroMaisBarato());
+        //Obtém e exibe o livro mais barato
+        System.out.println("Livro mais barato: " + livrariaOnline.exibirLivroMaisBarato());
+        System.out.println();
 
         // Remover um livro pelo título
-      //  livrariaOnline.removerLivro("1984");
-        //System.out.println(livrariaOnline.livroMap);
+        livrariaOnline.removerLivro("1984");
+        System.out.println(livrariaOnline.livroMap);
     }
 }
