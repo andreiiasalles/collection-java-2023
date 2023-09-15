@@ -13,7 +13,7 @@ public class Desafio10 {
         // Utilize a Stream API para agrupar os valores ímpares múltiplos de 3 ou de 5
         Map<Boolean, List<Integer>> grupos = numeros.stream()
                 .filter(numero -> numero % 2 != 0 && (numero % 3 == 0 || numero % 5 == 0))
-                .collect(Collectors.partitioningBy(numero -> numero % 3 == 0 || numero % 5 == 0));
+                .collect(Collectors.partitioningBy(numero -> numero % 3 == 0));
 
         // Exiba o resultado no console
         System.out.println("Valores ímpares múltiplos de 3 ou 5 agrupados:");
